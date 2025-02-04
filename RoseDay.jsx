@@ -1,33 +1,84 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You <3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hey <span id="name">[Your Crush’s Name]</span>,</h1>
+        <p>Welcome to a little surprise I made just for you.</p>
+    </header>
 
-export default function RoseDay() {
-  return (
-    <div className="min-h-screen bg-pink-200 flex items-center justify-center">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        className="bg-white p-8 rounded-2xl shadow-lg text-center max-w-md"
-      >
-        <motion.img
-          src="https://source.unsplash.com/400x300/?rose"
-          alt="Rose"
-          className="rounded-xl mb-4"
-          initial={{ scale: 0.5, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1 }}
-        />
-        <h1 className="text-3xl font-bold text-red-500">Happy Rose Day!</h1>
-        <p className="text-gray-600 my-4">
-          "A rose does not answer, it only spreads its fragrance. Wishing you a
-          fragrant and love-filled Rose Day!"
-        </p>
-        <Button className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg">
-          Send a Rose 🌹
-        </Button>
-      </motion.div>
-    </div>
-  );
+    <section class="intro">
+        <img src="assets/images/heart.jpg" alt="Heart Image">
+        <p>This website
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f3ff;
+    color: #4a4a4a;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-top: 50px;
+    font-size: 2.5em;
+    color: #ff6f61;
+}
+
+#name {
+    color: #4e94e7;
+}
+
+h2 {
+    color: #ff6f61;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.quote {
+    margin-top: 40px;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #ff6f61;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 1em;
+    color: #4a4a4a;
+}
+
+footer a {
+    color: #4e94e7;
+    text-decoration: none;
+    font-weight: bold;
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const name = document.getElementById("name");
+
+    // Add a small interactive feature
+    name.addEventListener('click', () => {
+        alert("You just made me smile!");
+    });
+});
+<img src="https://via.placeholder.com/300/ff6f61/ffffff?text=I+Heart+You" alt="Heart Image">
